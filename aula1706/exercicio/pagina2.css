@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #78ABA8, #C8CFA0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1  {
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #3a563a;
+
+}
+
+img {
+    width: 200px;
+    box-shadow: 20px 10px 25px 0px #3a563a;
+}
+
+button {
+    background-color: #3a563a;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+  
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+    font-weight: 600;
+}
+
+.botao-email {
+    background-color: aquamarine;
+    color: black;
+    border-radius: 0;
+    border: dotted;
+}
+
+.botao-whats {
+    border:double;
+}
+
+.botao-portfolio {
+    border-radius: 0;
+    border: 5px dashed rgb(43, 226, 177);
+}
+
+.botao-instagram {
+    background-color: #04AA6D;
+    color: #3a563a;
+}
+
+

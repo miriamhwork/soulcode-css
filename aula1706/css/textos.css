@@ -24,9 +24,8 @@ p {
     - Unidades relativas:
         vh -> viewport height (altura da tela)
         vw -> viewport width (largura da tela)
-        em -> 
-        rem -> 
-        % -> 
+        rem -> relativo ao elemento raiz
+        % ->  relativo ao elemento pai
 
 */
 
