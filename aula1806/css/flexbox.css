@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.item-1 {
+    background-color: lightsalmon;
+}
+
+.item-2 {
+    background-color: lightseagreen;
+}
+
+.item-3 {
+    background-color:lightyellow;
+    align-self: stretch; /* Define o alinhamento individual no eixo cross. Mais usados: flex-start, flex-end, center, stretch */
+}
+
+.item-4 {
+    background-color: lightskyblue;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+    width: 200px; /* só para visualizar melhor */
+    padding: 8px; /* só para visualizar melhor */
+}
+
+.container {
+    background-color: yellow; /* fica só na div container, se fosse o corpo todo ou teria que por no body ou um height de 100vh*/
+    /*padding: 8px; vai criar um espaçamento em volta dos elementos filhos*/
+    display: flex; /* Ativa o flexbox*/
+    flex-direction: row; /* Define se é row ou column*/
+    flex-wrap: wrap;/* Define se há quebra de linha na falta de espaço*/
+    justify-content: space-around; /* mais usados start, end, center, space-between, space-around, space-evenly */
+    align-items:center; /* ajusta os elementos no eixo cross no contexto row*/
+    height: 100vh;
+    align-content: center; /* vai aplicar espaço entre as linhas*/
+    gap: 16px; /* ao invés de usar margin e padding, use o gap */
+}
+

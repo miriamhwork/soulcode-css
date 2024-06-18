@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* Reset = diminuir as interferências dos navegadores */
+* {
+   box-sizing: border-box;
+   margin: 0; 
+   padding: 0;
+   border: 0;
+}
+
+html {
+    /* Estas propriedades são herdadas pelos elementos da página */
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    background-color: #121212;
+}
+
+.cabecalho {
+    height: 320px;
+    padding: 56px 24px;
+    background: linear-gradient(0deg, #121212, transparent), url(https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    font-size: 3.5rem;
+}
+
+.descricao {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.btn {
+    background-color: transparent; /* fundo do botão */
+    border: 4px solid white; /* espessura da borda, estilo e cor */
+    color: white; /* cor da fonte*/
+    border-radius: 8px; /* borda */
+    padding: 16px 32px; /* espaçamento interno */
+    font-size: 1rem; /* tamanho da fonte */
+    font-family: "Inter", sans-serif;
+    margin: 6px 0; /* separa o texto da tag p do botão */
+    cursor: pointer; /* estilo do cursor quando for passar em cima */
+    transition: background-color 0.9s; /* Pequenas animações ao mudar o valor da uma propriedade*/
+}
+
+/* :hover aplica um estilo quando o mouse passa sobre o botão*/
+.btn:hover {
+    background-color: white;
+    color: #121212;
+}
+
+.newsletter {
+    width: 300px;
+    margin: auto;
+    padding: 16px; /*espaçamento entre elementos*/
+}
+
+input {
+    width: 100%; /* vai ter 100% do elemento pai, no caso da section newsletter que tem 300px */
+    padding: 12px 20px; /*tamanho da parte branca do input na vertical e horizontal */
+    margin: 8px 0; /* distância entre os inputs na vertical horizontal */
+    border-radius: 4px; /* arredondamento das bordas */
+    font-family: "Inter", sans-serif; /* tipo de fonte quando o usuário escrever */
+}
+
+.btn-w100 {
+    width: 100%; /*vai estilizar o tamanho apernas do botão "assinar newsletter" preenchendo 100% do tamanho do elemento pai (section newsletter) */
+}
+
+.cronograma {
+    width: 800px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* tira as bordas */
+}
+
+td, th {
+    border: 1px solid #ccc; /*espessura da borda, estilo e cor*/
+    padding: 8px; /*separar os elementos*/
+}
+
+th {
+    text-align: left;
+    background-color: #ccc;
+    color: #121212;
+    border-color: #121212;
+}
+
+.contato-whatsapp {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%; /* vai criar uma bordar ao redor da imagem */
+    padding: 8px; /* vai criar um espaçamento entre a borda e a imagem */
+    position: fixed; /* fixa o elemento na tela */
+    right: 16px; /* vai colocar o elemento a 16px do lado direito da tela*/
+    bottom: 16px; /* vai colocar o elemento a 16px no fundo da tela, mesmo se fizer o scrool na página, ficará fixado*/
+}
+
+.contato-whatsapp img {
+    width: 100%; /* aqui a imagem do ícone whatsapp vai ocupar 100% do aside (.contato-whatsapp) de 56 x 56px */
+}
+
+.contato-whatsapp:hover {
+    filter: invert(1); /* inverte as cores do elemento, assim não precisa colocar um novo background-color, color, etc */
+}
