@@ -1,0 +1,25 @@
+/* Media Query = regra especial */
+
+/*
+    @media condicao {
+        //estilo a serem aplicados quando a condição for verdadeira
+    }
+*/
+
+@media (max-width:480px) { /*se a largura estiver no máximo 480px aplica-se o estilo que estiver dentro */
+    body {
+        background-color: red;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media (min-width:769px) {
+    body {
+        background-color: pink;
+    }
+}

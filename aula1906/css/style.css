@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #0b0f19;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.navbar img {
+    height: 100%; /* vai obedecer a altura do navbar, mas não pode colocar align-items: center no .navbar senão ele vai perder a referência de height:100% de quem */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* vai forçar um espaço entre os links */
+    align-items: center; /* alinha os links no centro verticalmente*/
+}
+
+.nav-links a {
+    text-decoration: none; /* retira o sublinhado dos links*/
+    color: white; /* muda a cor da fonte dos links */
+}
+
+.nav-links a:hover {
+    color:#d9b800; /* link vai mudar para cor de fonte amarelo quando o usuário passar o mouse por cima*/
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* trocar a navbar de row para column */
+        height: auto; /* vai se ajustar ao tamanho dos elementos na navbar */
+        align-items: center; /* alinha horizontalmente */
+        gap: 12px;
+    }
+
+    .navbar img{
+        width: 156px; /* - ajustar a largura da imagem */
+    }
+
+    .nav-links {
+        flex-direction: column; /* - row p/ column */
+    }
+}
+
+/* Seção de Cards Responsivos*/
+.section-container {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* para quebrar a linha conforme a tela for diminuindo */
+    justify-content: center; /* alinha ao centro horizontalmente*/
+    gap: 16px; /*espaço entre os cards*/
+    padding: 10px; /* espaçamento interno para não ficar grudado na navbar*/
+} 
+
+.section-card {
+    width: 300px;
+    display: flex; /* FlexBox, para os cards ficam ao lado da imagem */
+    padding: 16px; /* cria um espaço ao redor interno de cada article*/
+    gap: 20px; /* cria um espaço entre os elementos, no caso, imagem e o texto*/
+    background-color: wheat; /* só para ver o tamanho da section */
+}
+
+.section-card img {
+    width: 120px; /* tamanho da imagem */
+}
+
+.section-card p {
+    text-align: justify; /*texto dos parágrafos justificados*/
+}
+
+@media (max-width: 768px) {
+    .section-card {
+        flex-direction: column;
+        padding: 0; /* fica tudo mais "grudado" */
+        gap: 0; /* retira o espaçamento entre os cards */
+    }
+
+    .section-card img {
+        width: 100%; /* imagem vai ocupar 100% do tamanho da section-card*/
+    }
+
+    .section-card p {
+        padding: 16px; /* espaçamento interno ao redor do texto */
+    }
+}
+
